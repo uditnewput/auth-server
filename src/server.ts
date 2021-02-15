@@ -71,7 +71,7 @@ server.use(cors({
     ],
   }))
 
-server.use('/api', mainRouter);
+server.use('/v1', mainRouter);
 
 server.get('/', (req, res) => {
     res.send('Hi, it\'s working on port ' + PORT);
